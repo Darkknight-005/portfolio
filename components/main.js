@@ -3,7 +3,7 @@ import React from 'react'
 // import Photo from '/coder.gif'
 const Main = () => {
     return (
-        <main className='w-screen h-screen bg-black/20 snap-y snap-mandatory overflow-y-scroll' id='main'>
+        <main className='w-auto h-screen bg-black/20 snap-y snap-mandatory overflow-y-scroll' id='main'>
 
             <div className='h-screen snap-start lg:px-14 pb-10 outline-black' id='home'>
                 <div className='h-full relative top-[3%] rounded-md flex flex-col items-center justify-center gap-y-4 backdrop-blur-sm backdrop-opacity-60 backdrop-brightness-75 bg-white/30 text-black px-5 '>

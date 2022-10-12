@@ -15,12 +15,12 @@ import Menu from '../components/menu'
 
 function App() {
   return (
-    <div className="h-screen w-screen flex items-center justify-center text-base bg-blue-300" id='app'>
+    <div className="h-screen w-auto flex items-center justify-center text-base bg-blue-300" id='app'>
       <Head>
         <title>Portfolio</title>
       </Head>
       <div className=''>
-        <ul className='gap-y-3 text-green-500 flex flex-col justify-center text-xl fixed left-3 top-3 z-10 ' id='menu'>
+        <ul className='gap-y-3 text-green-500 flex flex-col justify-center text-xl fixed left-[96%] top-3 z-10 ' id='menu'>
           <Link href='/#home'>
             <a>
               <Menu Icon={GoHome} Title='Home' />

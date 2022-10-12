@@ -19,8 +19,8 @@ function App() {
       <Head>
         <title>Portfolio</title>
       </Head>
-      <div className='fixed right-0 top-1 z-10'>
-        <ul className='gap-y-3 flex-col text-green-500 grid  text-xl' id='menu'>
+      <div className=''>
+        <ul className='gap-y-3 text-green-500 grid text-xl fixed right-0 top-1 z-10 py-2' id='menu'>
           <Link href='/#home'>
             <a className='p-1'>
               <Menu Icon={GoHome} Title='Home' />
@@ -44,7 +44,7 @@ function App() {
         </ul>
       </div>
       <div>
-        <ul className='gap-y-4  flex-col text-green-500 fixed transition-all duration-700 left-3 bottom-3 grid z-10 py-2 text-xl' id='social'>
+        <ul className='gap-y-4   text-green-500 fixed transition-all duration-700 left-3 bottom-3 grid z-10 py-2 text-xl' id='social'>
 
           <a href='https://github.com/darkknight-005' target='__blank'>  <Menu Icon={FaGitSquare} Title='Darkknight-005' Name='github.com' /> </a>
           <Link href='/#'>

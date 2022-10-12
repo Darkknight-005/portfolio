@@ -20,24 +20,24 @@ function App() {
         <title>Portfolio</title>
       </Head>
       <div className=''>
-        <ul className='gap-y-3 text-green-500 grid text-xl fixed right-0 top-1 z-10 py-2' id='menu'>
+        <ul className='gap-y-3 text-green-500 flex flex-col justify-center text-xl fixed left-3 top-3 z-10 ' id='menu'>
           <Link href='/#home'>
-            <a className='p-1'>
+            <a>
               <Menu Icon={GoHome} Title='Home' />
             </a>
           </Link>
           <Link href='/#about'>
-            <a className='p-1'>
+            <a>
               <Menu Icon={BsInfo} Title='About' />
             </a>
           </Link>
           <Link href='/#project'>
-            <a className='p-1'>
+            <a>
               <Menu Icon={MdCodeOff} Title="Project's" />
             </a>
           </Link>
           <Link href='/#'>
-            <a className='p-1'>
+            <a>
               <Menu Icon={ImDownload} Title="Resume" />
             </a>
           </Link>

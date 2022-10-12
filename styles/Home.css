@@ -10,8 +10,10 @@ li {
   transform-style: preserve-3d;
 }
 
-#social li>h3 {
+
+#social li>h3 ,#menu li>h3 {
   rotate: 180deg;
+  color: orangered;
 }
 
 #home, #about, #project {

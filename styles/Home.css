@@ -11,10 +11,6 @@ li {
 }
 
 
-#social li>h3 ,#menu li>h3 {
-  rotate: 180deg;
-  color: orangered;
-}
 
 #home, #about, #project {
   background-image: url('../public/example-29.svg');
@@ -57,42 +53,29 @@ li {
 
 /* about */
 
-/* #about_gif{
-  width: 100vw;
-  height: 100vh;
-} */
 
 /* home */
 
-.home_h3{
-  animation: type 5s steps(16,end) 1s infinite , blink 1s ease-in-out 1s infinite;
-  white-space: nowrap;
-  overflow: hidden;
+/*  */
+
+
+#social li>h3 ,#menu li>h3 {
+  rotate: 180deg;
+  color: orangered;
+}
+#social li:hover>h3,#menu li:hover>h3{
+  animation: anime 10s ease-in-out 2s both;
+  transition: 2s;
+
 }
 
-@keyframes type{
+
+@keyframes anime{
   from{
-    width: 0;
+    display: block;
   }
   to{
-    width: 16rem;
+    display: block;
+
   }
 }
-
-@keyframes blink{
-  from{
-  border-right: none;
-
-  }  
-  to{
-    border-right: 1px solid black;
-  }
-}
-
-/* 
-#menu{
-  position: absolute;
-  left: 96%;
-  top: 0;
-  margin-right: 1rem;
-} */

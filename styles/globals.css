@@ -6,8 +6,8 @@
 
 @layer components{
   body{
-    background-color: black;
-    color: aliceblue;
+    /* background-color: black; */
+    /* color: aliceblue; */
     font-family: 'caveat', cursive;
     font-size: 24px;
   }

@@ -12,43 +12,50 @@ li {
 
 
 
-#home, #about, #project {
+#home,
+#about,
+#project {
   background-image: url('../public/example-29.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 15vh;
   /* background-position-y: -50%; */
 }
-#home{
+
+#home {
   background-image: url('../public/Web\ dev.svg');
   background-position: center 5vh;
+  opacity: 0.8;
 }
+
 /* #project{
   background-image: ('./images/Web\ dev.svg');
 } */
-#project{
+#project {
   background-image: url('../public/select.gif');
   background-position: center;
 }
 
 @media (min-width:1024px) {
 
-   #about {
-      /* background-size: 200%; */
-      background-size: 50%;
-      background-position-x: 5vw;
-      background-position-y: 50%;
+  #about {
+    /* background-size: 200%; */
+    background-size: 50%;
+    background-position-x: 5vw;
+    background-position-y: 50%;
   }
-  #home{
-      background-position-y: -35vh;
-      background-position-x: -3vw;
-      /* background-size: 80%; */
+
+  #home {
+    background-position-y: -35vh;
+    background-position-x: -3vw;
+    /* background-size: 80%; */
   }
-  #project{
-      background-size: cover;
-      /* background-position-x: -5vw; */
+
+  #project {
+    background-size: cover;
+    /* background-position-x: -5vw; */
   }
-  
+
 }
 
 /* about */
@@ -59,23 +66,82 @@ li {
 /*  */
 
 
-#social li>h3 ,#menu li>h3 {
+#social li>h3,
+#menu li>h3 {
   rotate: 180deg;
   color: orangered;
 }
-#social li:hover>h3,#menu li:hover>h3{
-  animation: anime 10s ease-in-out 2s both;
-  transition: 2s;
 
+#social li:hover>h3,
+#menu li:hover>h3 {
+  animation: anime 10s ease-in-out 2s both;
 }
 
 
-@keyframes anime{
-  from{
+@keyframes anime {
+  from {
     display: block;
   }
-  to{
+
+  to {
     display: block;
 
   }
+}
+
+#nav_m > *{
+  position: relative;
+  z-index: 1;
+}
+
+#nav_m{
+  overflow: hidden;
+}
+#nav_m::before {
+  content: '';
+  width: 4.5rem;
+  height: 5rem;
+  background-image: conic-gradient(
+    rgb(0, 242, 255) 20deg,  rgba(181, 0, 181, 0.576) 140deg
+  );
+  position: absolute;
+  /* background-image: linear-gradient(to top right , red ,black); */
+  left: -1rem;
+  top: -1rem;
+  bottom: -1rem;
+  right: -1rem;
+  animation: rotate 2s linear infinite ;
+  /* rotate: 360deg; */
+}
+
+@keyframes rotate {
+  0%{
+    rotate: 360deg;
+  }
+  100%{
+    rotate: 0deg;
+  }
+  
+}
+
+#nav_m::after{
+  content: '';
+  width: 90%;
+  height: 95%;
+  background-color: rgb(17, 17, 17);
+  left: 0.15rem;
+  top: 1px;
+  align-self: center;
+  position: absolute;
+  border-radius: 15%;
+}
+
+#nav_m:hover::after{
+  display: none;
+}
+ #nav_m:hover::before{
+  background-color: black;
+  animation: none;
+  background-image: none;
+
 }
